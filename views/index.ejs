@@ -1,0 +1,26 @@
+<div class="author">
+    <h1 class="author__heading">Hi, i am Amitesh</h1>
+    <p class="author__body">Web developement </p>
+</div>
+<img src="/img/hero-image.webp" alt="person looking out of the window" class="hero-image" width="981" height="528">
+
+<section class="articles"> 
+    <h2 class="article__heading">posts</h2>
+
+    <ul class="article-ul">
+        <% data.forEach(post => { %>
+            
+        <li>
+            <a href="/post/<%= post._id %>">
+                <span>
+                    <%= post.title %>
+                </span>
+                <span class="article-list__date"><%= post.createdAt.toDateString() %>
+                </span>
+            </a>
+        </li>
+
+        <% }) %>
+    </ul>
+    <a href="#" class="Pagination">&lt; Veiw Older Post</a>
+</section>

@@ -1,0 +1,6 @@
+# this file is created to ignore the things that we not want to see in the code 
+#                                                                                                 when we upload on github
+# the file of node modules also we dont want to see so therefore it will be ignore here
+
+node_modules/
+.env
